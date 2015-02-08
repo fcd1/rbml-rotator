@@ -702,12 +702,6 @@ p.copyright-footer a {
   float: none;
 }
 
-.exhibit-block.layout-gallery .gallery.with-showcase.right .exhibit-item.exhibit-gallery-item {
-  display: inherit;
-  width: inherit;
-  margin-bottom: 2em;
-}
-
 .layout-gallery .exhibit-item.exhibit-gallery-item {
   width: 200px;
   padding: 10px;
@@ -723,7 +717,7 @@ p.copyright-footer a {
 
 .exhibit-block.layout-gallery .gallery-text.gallery-right {
   float: left;
-  width: 400px;
+  width: 45%;
   padding: 1em;
 }
 
@@ -738,13 +732,19 @@ p.copyright-footer a {
 }
 
 .exhibit-block.layout-gallery .gallery-showcase.left.with-right {
-  width: 400px;
+  width: 45%;
   float: left;
   padding: 1em;
 }
 
 .exhibit-block.layout-gallery .gallery-showcase.right.with-left {
-  width: 48%;
+  width: 45%;
+  float: right;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase.right {
+  width: 45%;
   float: right;
   padding: 1em;
 }
@@ -784,7 +784,7 @@ p.copyright-footer a {
 }
 
 .exhibit-block .exhibit-items a.link-to-item-page {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* fcd1, Feb 2015: */
