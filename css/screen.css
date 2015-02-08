@@ -643,6 +643,7 @@ p.copyright-footer a {
   width: 200px;
   padding: 5px;
   margin-bottom: 2%;
+  margin-left: 0px;
 }
 
 .layout-file-text .exhibit-text.left.thumbnail {
@@ -653,7 +654,7 @@ p.copyright-footer a {
 
 .layout-file-text .exhibit-text.right.thumbnail {
   float: left;
-  width: 490px;
+  width: 480px;
   padding: 5px;
 }
 
@@ -780,6 +781,10 @@ p.copyright-footer a {
 .layout-file-text .exhibit-items .highslide img {
   width: 100%;
   margin-bottom: 1.5em;
+}
+
+.exhibit-block .exhibit-items a.link-to-item-page {
+  margin-bottom: 10px;
 }
 
 /* fcd1, Feb 2015: */
