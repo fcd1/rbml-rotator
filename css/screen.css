@@ -636,6 +636,7 @@ p.copyright-footer a {
   width: 200px;
   padding: 5px;
   margin-bottom: 2%;
+  margin-right: 0px;
 }
 
 .layout-file-text .exhibit-items.right.thumbnail {
@@ -648,7 +649,7 @@ p.copyright-footer a {
 
 .layout-file-text .exhibit-text.left.thumbnail {
   float: right;
-  width: 490px;
+  width: 480px;
   padding: 5px;
 }
 
@@ -719,6 +720,7 @@ p.copyright-footer a {
   float: left;
   width: 45%;
   padding: 1em;
+  clear: left;
 }
 
 .exhibit-block.layout-gallery .gallery-text.gallery-left {
