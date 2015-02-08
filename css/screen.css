@@ -620,3 +620,166 @@ p.copyright-footer a {
 .exhibit-item-show #citation #citation-value {
     margin-bottom: 0.5em;
 }
+
+/* fcd1, Feb 2015: */
+/* START of Changes for move to Omeka 2.2.2 (and ExhibitBuilder 3.1.3) */
+
+.exhibit-block.layout-file-text {
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
+/* fcd1, 02/06/14 */
+
+.layout-file-text .exhibit-items.left.thumbnail {
+  float: left;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 2%;
+}
+
+.layout-file-text .exhibit-items.right.thumbnail {
+  float: right;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 2%;
+}
+
+.layout-file-text .exhibit-text.left.thumbnail {
+  float: right;
+  width: 490px;
+  padding: 5px;
+}
+
+.layout-file-text .exhibit-text.right.thumbnail {
+  float: left;
+  width: 490px;
+  padding: 5px;
+}
+
+.layout-file-text .exhibit-items.left.fullsize {
+  margin-top: 10px;
+  width: 50%;
+  float: left;
+}
+
+.layout-file-text .exhibit-items.right.fullsize {
+  width: 48%;
+  float: right;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.layout-file-text .exhibit-items.left.fullsize img {
+  width: 90%;
+  float: none;
+}
+
+.layout-file-text .exhibit-items.right.fullsize img {
+  padding: 2px;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase.right {
+  float: right;
+  width: 250px;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase.left {
+  float: left;
+  width: 250px;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase .exhibit-item.exhibit-gallery-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1%;
+  width: 48%;
+  padding: 0px;
+  margin-bottom: 2%;
+  float: none;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase.right .exhibit-item.exhibit-gallery-item {
+  display: inherit;
+  width: inherit;
+  margin-bottom: 2em;
+}
+
+.layout-gallery .exhibit-item.exhibit-gallery-item {
+  width: 200px;
+  padding: 10px;
+  float: left;
+}
+
+.layout-gallery .gallery .exhibit-item.exhibit-gallery-item {
+  width: 200px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+.exhibit-block.layout-gallery .gallery-text.gallery-right {
+  float: left;
+  width: 400px;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery-text.gallery-left {
+  float: right;
+  width: 48%;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery-text.showcase-none.gallery-left {
+  display: none;
+}
+
+.exhibit-block.layout-gallery .gallery-showcase.left.with-right {
+  width: 400px;
+  float: left;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery-showcase.right.with-left {
+  width: 48%;
+  float: right;
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase.left {
+  width: 45%;
+  float: left; 
+  padding: 1em;
+}
+
+.exhibit-block.layout-gallery .gallery {
+  overflow: hidden;
+}
+
+.exhibit-block.layout-gallery .gallery-showcase.left.with-right img.full,
+.exhibit-block.layout-gallery .gallery-showcase.right.with-left img.full {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.exhibit-block.layout-gallery .gallery.with-showcase.right.captions-center .exhibit-item.exhibit-gallery-item img,
+.exhibit-block.layout-gallery .gallery.with-showcase.left.captions-center .exhibit-item.exhibit-gallery-item img {
+  width: 100%;
+}
+
+.exhibit-block.layout-gallery .gallery .exhibit-item.exhibit-gallery-item img {
+  max-width: 100%;
+}
+
+.exhibit-block .exhibit-items .exhibit-item-caption p {
+  margin-bottom: 0px;
+}
+
+.layout-file-text .exhibit-items .highslide img {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+/* fcd1, Feb 2015: */
