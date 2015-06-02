@@ -79,7 +79,7 @@
         ?>
           <h1 class="exhHeader"><?php echo $matches[0]; ?>
         <?php endif;
-          if ($matches[1]):
+          if ( array_key_exists(1,$matches) ):
             echo ':';
         ?>
         <span style="text-transform:none;font-size:24px"><?php echo $matches[1]; ?></span>
