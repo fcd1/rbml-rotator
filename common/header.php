@@ -52,7 +52,13 @@
     <div id="wrap">
       <div class="headBack">
         <?php
-          $exhibit_uri = exhibit_builder_exhibit_uri();
+     // fcd1, 06/08/15: exhibit_builder_exhibit_uri calls get_current_record('exhibit') internally,
+     // which throws an exception if exhibit is not set. So see if there is an exhibit before calling,
+     // using get_current_record with the second argument set to false (false => do not throw exception),
+     // If not set, this second argument defaults to true (true => throw exception).
+    $exhibit = get_current_record('exhibit', false);
+if ($exhibit):
+    $exhibit_uri = exhibit_builder_exhibit_uri();
           $exhibit_nickname = '';
           if (stristr($exhibit_uri, 'nyccc'))
             $exhibit_nickname = "nyccc";
@@ -86,6 +92,7 @@
         <?php endif; ?>
           </h1>
         <?php if ($imageURL) echo "</div>"; ?>
+<?php endif; ?>
       </div> <!--end class="headBack"-->
       <?php echo flash(); ?>
 

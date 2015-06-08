@@ -1,6 +1,12 @@
     </div><!--end wrap-->
     <?php
-      $ur = exhibit_builder_exhibit_uri();
+      // fcd1, 06/08/15: exhibit_builder_exhibit_uri calls get_current_record('exhibit') internally,
+      // which throws an exception if exhibit is not set. So see if there is an exhibit before calling,
+      // using get_current_record with the second argument set to false (false => do not throw exception)
+      // If not set, this second argument defaults to true (true => throw exception).
+    $exhibit = get_current_record('exhibit', false);
+if ($exhibit):
+  $ur = exhibit_builder_exhibit_uri();
       $e = '';
       if (stristr($ur,'nyccc'))
         $e = "nyccc";
@@ -12,6 +18,7 @@
       else {
         echo '<p class="footer11px">Columbia University Libraries / University Archives / Rare Book &amp; Manuscript Library / Butler Library, 6th Fl. / 535 West 114th St. / New York, NY 10027 / (212) 854-3786 / <a href="mailto:uarchives@libraries.cul.columbia.edu">uarchives@libraries.cul.columia.edu</a></p>';
       } 
+endif;
     ?>
     <p class="copyright-footer"> 
       <?php echo cul_copyright_information();?>
